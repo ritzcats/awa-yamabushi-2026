@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>安房山伏修行 2026</title>
+<meta name="description" content="2026年12月5日(土)開催。南房総・安房の山々をめぐり、自然と祈りに身をゆだねる一日。先達：羽黒山伏 星野文紘。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap">
+<style>
+/* Layout: 一枚の和紙のような縦長の流れ。冒頭すぐ下に「日時・場所・申込」の札、スマホでは画面下に申込バーを常駐 */
+:root {
+  --paper:   #EEEBE1;   /* 地：灰がかった生成り */
+  --sheet:   #F7F5EE;   /* 札・カード */
+  --ink:     #3A3830;   /* 本文：墨 */
+  --ink-2:   #6B675A;   /* 補足：薄墨 */
+  --line:    #D8D2C2;   /* 罫 */
+  --moss:    #6F7A57;   /* 苔：見出し・リンク */
+  --moss-bg: #E3E5D6;
+  --kaki:    #A2703B;   /* 柿渋：申込ボタン */
+  --kaki-hi: #8E5F2F;
+  --on-kaki: #FBF7EF;
+  --hill-1:  #CFCDB9;
+  --hill-2:  #B9BCA0;
+  --hill-3:  #9DA486;
+  --sky:     #E6E2D3;
+
+  --f-display: "Klee One", "Hiragino Maru Gothic ProN", "Yu Gothic", serif;
+  --f-body: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "HiraMaruProN-W4", "Yu Gothic", "Meiryo", sans-serif;
+
+  --radius: 14px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #262520; --sheet: #2F2D27; --ink: #E7E3D6; --ink-2: #B3AD9C; --line: #47443A;
+    --moss: #AEB98F; --moss-bg: #34362B; --kaki: #C48F57; --kaki-hi: #D29E66; --on-kaki: #221F19;
+    --hill-1: #3D3C33; --hill-2: #4A4C3D; --hill-3: #5A604A; --sky: #2C2B25;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #262520; --sheet: #2F2D27; --ink: #E7E3D6; --ink-2: #B3AD9C; --line: #47443A;
+  --moss: #AEB98F; --moss-bg: #34362B; --kaki: #C48F57; --kaki-hi: #D29E66; --on-kaki: #221F19;
+  --hill-1: #3D3C33; --hill-2: #4A4C3D; --hill-3: #5A604A; --sky: #2C2B25;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.95;
+  letter-spacing: .03em;
+  font-feature-settings: "palt" 0;
+  padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--moss); text-underline-offset: 3px; word-break: break-all; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--kaki); outline-offset: 3px; border-radius: 6px; }
+u { text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: var(--kaki); }
+
+.wrap { max-width: 720px; margin: 0 auto; padding-inline: 20px; }
+
+/* ---------- 冒頭 ---------- */
+.hero { padding-block: 40px 0; }
+.hero .date-line {
+  font-family: var(--f-body); font-weight: 500;
+  font-size: .9rem; letter-spacing: .14em; color: var(--moss);
+  margin: 0;
+}
+.hero h1 {
+  font-family: var(--f-display); font-weight: 600;
+  font-size: clamp(2.4rem, 10vw, 3.6rem);
+  line-height: 1.25; letter-spacing: .12em;
+  margin: .2em 0 .15em;
+}
+.hero .sub {
+  font-family: var(--f-display);
+  font-size: clamp(1rem, 4vw, 1.2rem); line-height: 1.8;
+  margin: 0; color: var(--ink-2); text-wrap: balance;
+}
+.hero .lead-title { font-size: .85rem; color: var(--ink-2); margin: 0 0 .4em; letter-spacing: .1em; }
+
+.hero-photo {
+  position: relative; margin: 28px 0 0;
+  border-radius: var(--radius); overflow: hidden;
+  aspect-ratio: 5 / 4; max-width: 100%;
+  background: var(--sky);
+}
+@media (min-width: 640px) { .hero-photo { aspect-ratio: 4 / 3; } }
+.hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+
+/* 本文中の写真 */
+.photo { margin: 0 0 1.6em; border-radius: var(--radius); overflow: hidden; max-width: 100%; background: var(--sky); }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo.wide { aspect-ratio: 4 / 3; margin-inline: -20px; border-radius: 0; max-width: none; }
+@media (min-width: 760px) { .photo.wide { margin-inline: 0; border-radius: var(--radius); aspect-ratio: 16 / 9; } }
+.photo.wide img { object-position: 50% 70%; }
+.photo.half { aspect-ratio: 4 / 3; width: 82%; margin-left: auto; }
+
+/* ---------- 開催概要の札（いちばん目立たせる） ---------- */
+.key {
+  position: relative; z-index: 1;
+  margin: -36px 12px 0;
+  background: var(--sheet);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px 24px;
+  box-shadow: 0 10px 30px -18px rgba(58,56,48,.35);
+  display: grid; gap: 18px;
+}
+.key dl { margin: 0; display: grid; gap: 14px; }
+.key .row { display: grid; grid-template-columns: 4.6em 1fr; gap: 10px; align-items: baseline; }
+.key dt {
+  font-size: .78rem; letter-spacing: .15em; color: var(--moss); font-weight: 700;
+  border-right: 1px solid var(--line); padding-right: 8px;
+}
+.key dd { margin: 0; min-width: 0; line-height: 1.7; }
+.key .big { font-family: var(--f-body); font-weight: 700; font-size: 1.45rem; letter-spacing: .04em; font-variant-numeric: tabular-nums; display: block; }
+.key .big small { font-size: .95rem; font-weight: 500; }
+.key .place { font-weight: 700; font-size: 1.15rem; display: block; }
+.key .addr { font-size: .9rem; color: var(--ink-2); }
+.key .note {
+  display: inline-block; margin-top: 6px; font-size: .85rem; color: var(--kaki-hi);
+}
+
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: .6em;
+  min-height: 58px; padding: 12px 24px;
+  background: var(--kaki); color: var(--on-kaki);
+  font-family: var(--f-body); font-weight: 700; font-size: 1.1rem; letter-spacing: .12em;
+  border-radius: 999px; text-decoration: none; word-break: keep-all;
+  transition: background .2s, transform .2s;
+}
+.btn:hover { background: var(--kaki-hi); }
+.btn:active { transform: scale(.98); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.key .btn-note { margin: -6px 0 0; text-align: center; font-size: .8rem; color: var(--ink-2); }
+
+/* ---------- 目次（noteの目次のような囲み） ---------- */
+.toc {
+  margin: 36px 0 0; padding: 20px 20px 14px;
+  background: var(--sheet); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.toc-title {
+  margin: 0 0 6px; font-family: var(--f-display); font-weight: 600;
+  font-size: 1.05rem; letter-spacing: .2em; color: var(--ink);
+}
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { border-top: 1px dashed var(--line); }
+.toc > ol > li:first-child { border-top: 0; }
+.toc a {
+  display: block; padding: 10px 0; color: var(--ink); text-decoration: none;
+  font-size: .95rem; line-height: 1.6; word-break: normal;
+}
+.toc a:hover { color: var(--moss); text-decoration: underline; }
+.toc ol ol { padding-left: 1.2em; margin-top: -4px; padding-bottom: 6px; }
+.toc ol ol li { border-top: 0; }
+.toc ol ol a { padding: 4px 0; font-size: .88rem; color: var(--ink-2); }
+.toc ol ol a::before { content: "- "; }
+
+/* ---------- 本文 ---------- */
+section { padding-block: 56px 0; scroll-margin-top: 16px; }
+.item { scroll-margin-top: 16px; }
+h2 {
+  font-family: var(--f-display); font-weight: 600;
+  font-size: 1.5rem; letter-spacing: .1em; line-height: 1.5;
+  margin: 0 0 22px; text-wrap: balance;
+  display: flex; align-items: center; gap: 14px;
+}
+h2::after { content: ""; flex: 1 0 2em; height: 1px; background: var(--line); }
+h2 { word-break: keep-all; overflow-wrap: anywhere; }
+h3 {
+  font-family: var(--f-body); font-weight: 700; font-size: 1.05rem; letter-spacing: .08em;
+  color: var(--moss); margin: 0 0 8px;
+}
+p { margin: 0 0 1.1em; }
+.prose p { margin-bottom: 1.6em; }
+.prose p:last-child { margin-bottom: 0; }
+.prose .quote { font-family: var(--f-display); font-size: 1.2rem; }
+.prose .peaks { font-family: var(--f-display); font-size: 1.1rem; }
+
+.panel {
+  background: var(--sheet); border-radius: var(--radius);
+  padding: 22px 20px; border: 1px solid var(--line);
+}
+.stack { display: grid; gap: 16px; }
+
+/* 先達 */
+.sendatsu { display: grid; gap: 20px; }
+@media (min-width: 640px) { .sendatsu { grid-template-columns: 220px 1fr; align-items: start; } }
+.sendatsu figure { margin: 0; border-radius: var(--radius); overflow: hidden; max-width: 320px; }
+.sendatsu .name { font-family: var(--f-display); font-size: 1.6rem; letter-spacing: .12em; margin: 0; line-height: 1.4; }
+.sendatsu .kana { font-size: .85rem; color: var(--ink-2); margin: 0 0 12px; }
+.sendatsu .profile { margin: 0; padding: 0; list-style: none; }
+.sendatsu .profile li { padding-block: 4px; border-bottom: 1px dashed var(--line); }
+.sendatsu .profile li:last-child { border-bottom: 0; }
+.sendatsu .more { font-size: .85rem; margin-top: 12px; display: inline-block; }
+
+/* 詳細の項目 */
+.item h3 { display: flex; gap: .5em; align-items: baseline; }
+.item p:last-child { margin-bottom: 0; }
+.item .small, .panel .small { font-size: .9rem; color: var(--ink-2); line-height: 1.85; }
+.mycar { background: var(--moss-bg); border-color: transparent; }
+.mycar .alert { font-weight: 700; color: var(--ink); }
+.mycar strong { font-size: 1.05rem; }
+.route { padding: 14px 16px; border-left: 3px solid var(--hill-3); background: var(--paper); border-radius: 0 10px 10px 0; margin: 0 0 12px; }
+.route .tag { font-size: .8rem; font-weight: 700; color: var(--moss); letter-spacing: .1em; display: block; }
+.fee { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.cancel { display: grid; gap: 6px; margin: 8px 0 12px; padding: 0; list-style: none; }
+.cancel li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 14px; background: var(--paper); border-radius: 8px; font-variant-numeric: tabular-nums; }
+
+/* リスト */
+.check { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: .95rem; line-height: 1.8; }
+.check li { position: relative; padding-left: 1.5em; min-width: 0; }
+.check li::before {
+  content: ""; position: absolute; left: .1em; top: calc(.9em - .3em);
+  width: .6em; height: .6em; border-radius: 50%;
+  border: 1.5px solid var(--moss);
+}
+.check + .small { margin: 16px 0 0; }
+.ban { margin-top: 16px; background: var(--moss-bg); border-color: transparent; }
+
+.qr { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.qr img { width: 112px; border-radius: 8px; background: #fff; padding: 6px; }
+.qr .qr-text { min-width: 0; flex: 1 1 200px; font-size: .9rem; }
+
+/* 申込 */
+.apply { text-align: center; }
+.apply .panel { display: grid; gap: 18px; justify-items: center; padding: 32px 20px; }
+.apply .btn { width: 100%; max-width: 420px; }
+.apply .url { font-size: .85rem; }
+.apply .qr-pc { display: none; }
+@media (min-width: 768px) { .apply .qr-pc { display: grid; gap: 6px; justify-items: center; font-size: .8rem; color: var(--ink-2); } .apply .qr-pc img { width: 120px; background: #fff; padding: 6px; border-radius: 8px; } }
+.apply .closing { font-family: var(--f-display); font-size: 1.1rem; line-height: 2; margin: 0; }
+
+footer { margin-top: 64px; padding-block: 36px 40px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--ink-2); }
+footer .org { font-family: var(--f-display); font-size: 1.15rem; color: var(--ink); margin: 0 0 8px; letter-spacing: .08em; }
+footer p { margin: 0 0 .6em; }
+
+/* 画面下の申込バー */
+.bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: color-mix(in srgb, var(--sheet) 92%, transparent);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border-top: 1px solid var(--line);
+}
+.bar .inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+.bar .when { flex: 1; min-width: 0; font-size: .8rem; line-height: 1.5; }
+.bar .when b { font-size: 1rem; display: block; font-variant-numeric: tabular-nums; }
+.bar .btn { min-height: 48px; font-size: 1rem; padding: 8px 22px; flex: none; }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <p class="date-line">2026年12月5日(土)開催</p>
+  <p class="lead-title">安房山伏修行のご案内</p>
+  <h1>安房山伏修行</h1>
+  <p class="sub">～南房総・安房の山々をめぐり、自然と祈りに身をゆだねる一日～</p>
+
+  <figure class="hero-photo">
+    <img src="images/hero.jpg" alt="白装束の山伏たちが木漏れ日の山道を登る様子" width="1050" height="1400">
+  </figure>
+
+  <div class="key" id="overview">
+    <dl>
+      <div class="row">
+        <dt>日時</dt>
+        <dd><span class="big">12月5日<small>（土）</small> 8:50</span>集合（時間厳守）<br>行終了時間：16:00頃 予定</dd>
+      </div>
+      <div class="row">
+        <dt>集合場所</dt>
+        <dd><span class="place">御殿山駐車場</span><span class="addr">千葉県南房総市山田1162-1（トイレ有り）</span><br>
+          <a class="note" href="#mycar">◎マイカーの方へ：集合時間と場所が異なります！</a></dd>
+      </div>
+      <div class="row">
+        <dt>定員</dt>
+        <dd>25名 ／ 参加料：17,000円（税込）※事前振込</dd>
+      </div>
+    </dl>
+    <a class="btn" href="https://forms.gle/nig25qwGCqKBZUux5" target="_blank" rel="noopener">申込フォームへ
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4l6 6-6 6"/></svg></a>
+    <p class="btn-note">Googleフォームが開きます</p>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-title">
+    <p class="toc-title" id="toc-title">目次</p>
+    <ol>
+      <li><a href="#about">安房山伏修行とは</a></li>
+      <li><a href="#sendatsu">先達</a></li>
+      <li><a href="#details">詳細</a>
+        <ol>
+          <li><a href="#mycar">マイカーの方へ</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#naorai">直会（なおらい）</a></li>
+          <li><a href="#fee">定員・参加料</a></li>
+          <li><a href="#cancel">キャンセル料</a></li>
+        </ol>
+      </li>
+      <li><a href="#confirm">参加にあたってご確認いただきたいこと</a></li>
+      <li><a href="#items">必携品</a></li>
+      <li><a href="#stay">12/5宿泊について</a></li>
+      <li><a href="#day2">12/6安房神社・洲崎神社参拝のご案内（希望者のみ）</a></li>
+      <li><a href="#apply">申込フォーム</a></li>
+    </ol>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section id="about" class="prose" aria-label="安房山伏修行とは">
+    <p>今年、二年目を迎える安房山伏修行です。<br>
+    これまで多くの方がお山に入り、祈りを重ねてくださいました。<br>
+    その祈りは、土地に、人に、少しずつ伝わっているのだと感じています。<br>
+    今年も参加者の皆さんとともに、お山に入らせていただきます。</p>
+
+    <p><span class="quote">「千葉に山があるの？」</span><br>
+    そんなふうに聞かれることがよくあります。</p>
+
+    <p>千葉のお山は、標高300メートルほど、あるいはそれより低いお山がほとんどです。<br>
+    けれど、修行の場となるお山には低山も多く、その高さは関係ありません。</p>
+
+    <figure class="photo wide"><img src="images/view.jpg" alt="南房総の山並みと遠くに見える富士山" width="1600" height="1200" loading="lazy"></figure>
+
+    <p>今回歩くのは、<span class="peaks">御殿山・鷹取山・宝篋印塔山・大日山</span>の四つの峰。</p>
+
+    <p>房総には、古くから修験者（山伏）たちが山をめぐって修行していた伝承が残っています。<br>
+    御殿山や鷹取山にも、岩場で祈りを捧げた跡や、護摩の行をしたとされる話があります。</p>
+
+    <figure class="photo half"><img src="images/stones.jpg" alt="木々に囲まれた苔むした石積み" width="1200" height="900" loading="lazy"></figure>
+
+    <p>かつて、このお山を歩き、祈った人たちがいた。<br>
+    そして今、私たちもまた、お山を歩きます。</p>
+
+    <p>私たち「出羽三山千の葉講」は、南房総の風土やお山に魅せられ、地域とつながり、自然の中で祈り、学び、貢献することを活動の軸としています。<br>
+    また、羽黒派古修験道・出羽三山とのご縁を通じ、お山での学びを里で実践することも大切にしています。</p>
+
+    <p>先達には、今年も羽黒山伏最高位既修松聖・星野文紘先達をお迎えします。</p>
+
+    <p>安房山伏修行では、出羽三山・大聖坊で行われている修行の流れを汲み、山伏の作法に基づきながら、南房総のお山をめぐります。<br>
+    山伏修行が初めての方にもご参加いただける、一日のお行です。</p>
+  </section>
+
+  <section id="sendatsu">
+    <h2>先達</h2>
+    <div class="sendatsu">
+      <figure><img src="images/sendatsu.jpg" alt="星野文紘先達" width="749" height="998" loading="lazy"></figure>
+      <div>
+        <p class="name">星野文紘</p>
+        <p class="kana">（ほしの ふみひろ）</p>
+        <ul class="profile">
+          <li>羽黒山伏（山伏名:尚文）</li>
+          <li>山形県出羽三山 羽黒山宿坊「大聖坊」第十三代当主</li>
+          <li>出羽三山の最高の修行である「冬の峰百日行」の松聖を務める</li>
+        </ul>
+        <a class="more" href="https://mirailab.info/column/23062" target="_blank" rel="noopener">https://mirailab.info/column/23062</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <h2>詳細</h2>
+    <div class="stack">
+
+      <div class="panel item">
+        <h3>集合時間</h3>
+        <p>12月5日（土）8:50（時間厳守）</p>
+        <h3>集合場所</h3>
+        <p>御殿山駐車場  千葉県南房総市山田1162-1（トイレ有り）</p>
+      </div>
+
+      <div class="panel item mycar" id="mycar">
+        <p class="alert"><u>◎マイカーの方へ：集合時間と場所が異なります！</u></p>
+        <p>マイカー集合時間：<strong>8:20</strong><br>
+        マイカー集合場所：大日山遊歩道駐車場 千葉県南房総市増間520（トイレ有り）</p>
+        <p class="small">＊車の方は下山口集合です。車は下山口に置き、登拝の出発点となる御殿山までマイクロバスで移動します。<br>
+        ＊下山後、直会会場までご参加の方の同乗をご協力いただく場合がございます。</p>
+      </div>
+
+      <div class="panel item" id="access">
+        <h3>アクセス</h3>
+        <div class="route">
+          <span class="tag">&lt;電車&gt;</span>
+          ・東京駅5:21発（外房線君津駅 → 木更津6:47発 → 岩井駅7:47着→ <u>岩井駅7：55発（市営路線バス富山線） →  山田中8:47着（御殿山登山口）</u><u><b>【※注】</b></u>
+        </div>
+        <div class="route">
+          <span class="tag">&lt;高速バス&gt;</span>
+          ・東京駅八重洲南口6:20発 → ハイウェイオアシス富楽里7:45→<u>ハイウェイオアシス富楽里8:03発（市営路線バス富山線） → 山田中8:47着（御殿山登山口）</u><u><b>【※注】</b></u>
+        </div>
+        <p class="small">※注：下線部の<u>「市営バス富山線」は予約が必要です。</u><u><b>申込フォームの交通手段で、電車・高速バスを選択された方は市営バスを利用されるものとして、主催者が取りまとめて人数分予約します。</b></u>時刻表は10月現在のものです。</p>
+      </div>
+
+      <div class="panel item">
+        <h3>行終了時間</h3>
+        <p>16:00頃 予定<br>（その後温泉と直会）</p>
+      </div>
+
+      <div class="panel item" id="naorai">
+        <h3>直会（なおらい）</h3>
+        <p>※直会までが参加費に含まれています</p>
+        <p>時間：18:00開始（20:00終了予定）<br>
+        場所：南総城山温泉 里見の湯 千葉県館山市下真倉305-1<br>
+        <a href="https://www.satominoyu.com/" target="_blank" rel="noopener">https://www.satominoyu.com/</a></p>
+        <p class="small">※宿泊施設はありません<br>
+        ◎直会終了後、館山駅もしくは館山駅周辺のホテルに送迎が可能です（要事前申請）</p>
+        <p class="small"><u>直会とは・・・・</u><br>
+        お行が終わったあと、参加者と和やかに食事を共にすることです。</p>
+      </div>
+
+      <div class="panel item" id="fee">
+        <h3>定員・参加料</h3>
+        <p>定員：25名<br>
+        参加料：<span class="fee">17,000円</span>（税込）※事前振込</p>
+        <p class="small">・参加料に含まれるもの：修行参加費、マイクロバス代、直会費、直会会場での入浴料、レジャー保険、修行における備品使用（金剛杖、宝冠、注連など）</p>
+        <p class="small">・参加料に含まれないもの：行中の昼食（おにぎり一つのみ持参してください）、現地までの交通費(市営バス代200円含む)、直会時の追加飲み物代、宿泊代</p>
+      </div>
+
+      <div class="panel item">
+        <h3>修行時の食事について</h3>
+        <p>おにぎり一つのみご持参ください（周辺には購入できる店はないのでご注意ください）</p>
+      </div>
+
+      <div class="panel item" id="cancel">
+        <h3>キャンセル料</h3>
+        <p class="small">※行前日(12/4)から起算します</p>
+        <ul class="cancel">
+          <li><span>14日前〜9日前</span><span>20％</span></li>
+          <li><span>8日〜3日前</span><span>30％</span></li>
+          <li><span>2日前～当日</span><span>100%</span></li>
+        </ul>
+        <p class="small">※14日を過ぎてのキャンセル返金につきましては、キャンセル料と振込手数料を引いた額を後日銀行振込にて返金いたします。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="confirm">
+    <h2>参加にあたって<wbr>ご確認<wbr>いただきたいこと</h2>
+    <div class="panel">
+    <ul class="check">
+      <li>一般的な登山ができる方が対象です（約4〜5時間の山歩きを致します）</li>
+      <li>未成年の方は保護者の同意書が必要です</li>
+      <li>通院中の方は主治医の了承を得たうえでご参加ください</li>
+      <li>健康面に不安のある方、既往症のある方は事前にご相談ください</li>
+      <li>天候、諸事情等により、行程変更や中止となる場合があります</li>
+      <li>写真撮影を予定しています（SNS等での公開を希望されない方は、申込フォーム内の不可にチェックをお願いします）</li>
+      <li>遅刻された場合は参加できないことがあります。時間に余裕をもってお越しください</li>
+    </ul>
+    </div>
+  </section>
+
+  <section id="items">
+    <h2>必携品</h2>
+    <div class="panel">
+      <ul class="check">
+        <li>登山に適した動きやすい服装（できれば白っぽいもの、なくても可）</li>
+        <li>地下足袋や登山靴（履きなれたもの。雨で滑ることがあります。祭り用地下足袋は不適）</li>
+        <li>雨具（上下が分かれているもの。傘やポンチョは不適）</li>
+        <li>リュック（両手が使える様。色の指定はありません）</li>
+        <li>軍手</li>
+        <li>防寒用衣類（千葉でも日陰や夕方近くは肌寒いことがあります）</li>
+        <li>飲み物（ペットボトルや水筒。最低500㎖一本。天候による）</li>
+        <li>昼食時のおにぎり一つ</li>
+        <li>日焼け止め、虫よけ（必要な方）</li>
+        <li>着替え（行後に温泉に行くため）</li>
+      </ul>
+      <p class="small">※行に関係ないものは、車に置くことができます。</p>
+    </div>
+    <div class="panel ban">
+      <h3>行中に持ち込み禁止</h3>
+      <p style="margin:0">嗜好品、カメラ、録音機器、ラジオ、携帯電話その他これに類するもの。</p>
+    </div>
+  </section>
+
+  <section id="stay">
+    <h2>12/5宿泊について</h2>
+    <div class="panel">
+      <p>宿泊をご希望の方は、各自でご手配をお願いいたします。<br>
+      近隣の宿泊施設をまとめたリストをご案内いたしますので、そちらをご参照ください。</p>
+      <div class="qr">
+        <img src="images/qr-stay.png" alt="宿泊施設リストのQRコード" width="270" height="270" loading="lazy">
+        <p class="qr-text" style="margin:0">URL：<a href="https://drive.google.com/file/d/1YDlhyQAmUB1fkkFQKcviubCzYBhbWofx/view?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/file/d/1YDlhyQAmUB1fkkFQKcviubCzYBhbWofx/view?usp=sharing</a></p>
+      </div>
+      <p style="margin:18px 0 0">なお、直会会場での宿泊はできません。<br>
+      閉店時間までは、そのまま館内でお過ごしいただけます。</p>
+    </div>
+  </section>
+
+  <section id="day2">
+    <h2>12/6安房神社・<wbr>洲崎神社参拝の<wbr>ご案内<wbr>（希望者のみ）</h2>
+    <div class="panel">
+      <p>12月6日午前中には、安房神社・洲崎神社を参拝します。<br>
+      星野先達にご帯同いただく予定です。<br>
+      参加をご希望される方は申込フォームにチェックをお願いします。</p>
+      <p>参加料：ドネーション（寄付・投げ銭）制<br>
+      <span class="small">※当日、千の葉講スタッフへお渡しください</span></p>
+      <p style="margin:0">予定概略：安房神社（9：30頃）～洲崎神社～昼食後解散<br>
+      <span class="small">※内容や予定は予告なく変更になる場合があります</span></p>
+    </div>
+  </section>
+
+  <section id="apply" class="apply">
+    <h2>申込フォーム</h2>
+    <div class="panel">
+      <a class="btn" href="https://forms.gle/nig25qwGCqKBZUux5" target="_blank" rel="noopener">申込フォームへ
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4l6 6-6 6"/></svg></a>
+      <a class="url" href="https://forms.gle/nig25qwGCqKBZUux5" target="_blank" rel="noopener">https://forms.gle/nig25qwGCqKBZUux5</a>
+      <div class="qr-pc">
+        <img src="images/qr-form.png" alt="申込フォームのQRコード" width="216" height="216" loading="lazy">
+        <span>スマートフォンで読み取る場合</span>
+      </div>
+      <p class="closing">ご質問やお申し込みはお気軽にどうぞ。<br>
+      ともに、安房のお山と祈りの道を歩めることを楽しみにしています。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p class="org">主催｜出羽三山 千の葉講</p>
+  <p>代表 中山陽子（出羽三山羽黒山伏 峻妙）<br>
+  スタッフ：秋元真美（真瓔）、木村倫子（光倫）、鴻池亜矢（祥懌）、佐々木綾子、田村正（正顯）</p>
+  <p>sennohakou@gmail.com｜ Facebook: <a href="https://www.facebook.com/sennohakou/" target="_blank" rel="noopener">https://www.facebook.com/sennohakou/</a></p>
+</footer>
+
+<div class="bar" role="region" aria-label="お申し込み">
+  <div class="inner">
+    <p class="when" style="margin:0"><b>12月5日（土）</b>御殿山駐車場 8:50集合</p>
+    <a class="btn" href="https://forms.gle/nig25qwGCqKBZUux5" target="_blank" rel="noopener">申込フォームへ</a>
+  </div>
+</div>
+
+</body>
+</html>
